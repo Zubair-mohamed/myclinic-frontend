@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Clinic - Healthcare Management</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: '#14B8A6',
+                light: '#7CE7DA',
+                dark: '#0E8C7E',
+              },
+              secondary: {
+                DEFAULT: '#1D3557',
+                light: '#2B4A78',
+                dark: '#11243F',
+              },
+              accent: '#0EA5E9',
+              surface: '#FFFFFF',
+              ink: '#0F172A',
+              muted: '#94A3B8',
+              background: '#F7FBFF',
+              success: '#22C55E',
+              danger: '#EF4444',
+              warning: '#F59E0B',
+              info: '#E0F2FE',
+            },
+            fontFamily: {
+              cairo: ['"Cairo"', 'system-ui', 'sans-serif'],
+            },
+            borderRadius: {
+              '2.5xl': '1.25rem',
+              '3xl': '1.75rem',
+            },
+            boxShadow: {
+              soft: '0 20px 60px -18px rgba(17, 24, 39, 0.25)',
+            },
+          },
+        },
+      };
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.24.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.2.1",
+    "i18next": "https://aistudiocdn.com/i18next@^23.11.5",
+    "react-i18next": "https://aistudiocdn.com/react-i18next@^14.1.2",
+    "i18next-browser-languagedetector": "https://aistudiocdn.com/i18next-browser-languagedetector@^8.0.0",
+    "crypto-js": "https://aistudiocdn.com/crypto-js@^4.2.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-info">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
